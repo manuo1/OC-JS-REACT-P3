@@ -1,0 +1,44 @@
+Exemple Structure sass 1
+
+│
+├── index.html
+│
+├── /css
+│   └── styles.css
+│
+├── /scss
+│   ├── /partials
+│   │   ├── _reset.scss     # Réinitialisation des styles de base
+│   │   ├── _variables.scss # Variables (couleurs, typographies, etc.)
+│   │   ├── _mixins.scss    # Mixins pour les styles réutilisables
+│   │   ├── _base.scss      # Styles de base pour le layout général (grilles, etc.)
+│   │   └── _animations.scss# Animations CSS
+│   ├── styles.scss         # Fichier principal qui importe tous les partials
+
+#############################################################################################
+Pour Projet ?
+
+│
+├── index.html
+├── assets/
+│   ├── images/
+│   │   ├── logo
+│   │   └── restaurants
+│   └── css/
+│       └── styles.css            
+│
+├── scss/
+│   ├── styles.scss
+│   ├── _variables.scss     #couleurs, polices, etc.
+│   ├── _base.scss          #styles de base
+│   ├── _layout.scss        #mise en page, grille
+│   ├── _components.scss    #boutons, cartes, etc.
+│   ├── _header.scss        
+│   ├── _footer.scss        
+│   └── _responsive.scss    
+│
+├── /restaurants
+│   ├── restaurant1.html
+│   ├── restaurant2.html
+│   ├── restaurant3.html
+│   └── restaurant4.html
