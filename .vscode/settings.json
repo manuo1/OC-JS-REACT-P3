@@ -12,11 +12,12 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
+  "//": "Définit Prettier comme formateur par défaut pour SCSS",
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "//": "Ajoute des mots personnalisés au correcteur orthographique de VS Code",
-  "cSpell.words": [
-    "activites",
-    "hebergements"
-  ],
+  "cSpell.words": ["activites", "hebergements", "ohmyfood"],
 
   "//": "Configuration du compilateur Live Sass Compiler",
   "//": "Génère un CSS lisible et le stocke dans le dossier /css/",
@@ -24,7 +25,7 @@
     {
       "format": "expanded",
       "extensionName": ".css",
-      "savePath": "/css"
+      "savePath": "/assets/css"
     }
   ],
 
