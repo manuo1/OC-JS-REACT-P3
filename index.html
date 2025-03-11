@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ohmyfood</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Header -->
@@ -42,7 +46,7 @@
         </div>
         <div class="step">
           <div class="step__number">3</div>
-          <i class="step__icon fas fa-store"></i>
+          <i class="step__icon fas fa-store step__icon--active"></i>
           <p class="step__text">Dégustez au restaurant</p>
         </div>
       </div>
@@ -53,86 +57,86 @@
       <h2 class="restaurants__title">Restaurants</h2>
       <div class="restaurants__list">
         <!-- Restaurant Card 1 -->
-        <a href="restaurants/restaurant-1.html" class="restaurant">
-          <div class="restaurant__img-container">
-            <img
-              src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-              alt="Un plat du restaurant : La palette du goût"
-              class="restaurant__img"
-            />
-            <span class="restaurant__badge restaurant__badge--new">Nouveau</span>
-          </div>
-          <div class="restaurant__content">
+        <div class="restaurant">
+          <a href="restaurants/restaurant-1.html" class="restaurant__link">
+            <div class="restaurant__img-container">
+              <img
+                src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                alt="Un plat du restaurant : La palette du goût"
+                class="restaurant__img"
+              />
+              <span class="restaurant__badge--new">Nouveau</span>
+            </div>
             <div class="restaurant__info">
               <h3 class="restaurant__name">La palette du goût</h3>
               <p class="restaurant__location">Ménilmontant</p>
             </div>
-            <button type="button" class="restaurant__favorite" aria-label="Ajouter aux favoris">
-              <i class="restaurant__favorite-icon far fa-heart"></i>
-            </button>
-          </div>
-        </a>
+          </a>
+          <button type="button" class="restaurant__favorite" aria-label="Ajouter aux favoris">
+            <i class="restaurant__favorite-icon fa-regular fa-heart"></i>
+          </button>
+        </div>
 
         <!-- Restaurant Card 2 -->
-        <a href="restaurants/restaurant-2.html" class="restaurant">
-          <div class="restaurant__img-container">
-            <img
-              src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-              alt="Un plat du restaurant : La note enchantée"
-              class="restaurant__img"
-            />
-            <span class="restaurant__badge restaurant__badge--new">Nouveau</span>
-          </div>
-          <div class="restaurant__content">
+        <div class="restaurant">
+          <a href="restaurants/restaurant-2.html" class="restaurant__link">
+            <div class="restaurant__img-container">
+              <img
+                src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                alt="Un plat du restaurant : La note enchantée"
+                class="restaurant__img"
+              />
+              <span class="restaurant__badge--new">Nouveau</span>
+            </div>
             <div class="restaurant__info">
               <h3 class="restaurant__name">La note enchantée</h3>
               <p class="restaurant__location">Charonne</p>
             </div>
-            <button type="button" class="restaurant__favorite" aria-label="Ajouter aux favoris">
-              <i class="restaurant__favorite-icon far fa-heart"></i>
-            </button>
-          </div>
-        </a>
+          </a>
+          <button type="button" class="restaurant__favorite" aria-label="Ajouter aux favoris">
+            <i class="restaurant__favorite-icon fa-regular fa-heart"></i>
+          </button>
+        </div>
 
         <!-- Restaurant Card 3 -->
-        <a href="restaurants/restaurant-3.html" class="restaurant">
-          <div class="restaurant__img-container">
-            <img
-              src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-              alt="Un plat du restaurant : À la française"
-              class="restaurant__img"
-            />
-          </div>
-          <div class="restaurant__content">
+        <div class="restaurant">
+          <a href="restaurants/restaurant-3.html" class="restaurant__link">
+            <div class="restaurant__img-container">
+              <img
+                src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                alt="Un plat du restaurant : À la française"
+                class="restaurant__img"
+              />
+            </div>
             <div class="restaurant__info">
               <h3 class="restaurant__name">À la française</h3>
               <p class="restaurant__location">Cité Rouge</p>
             </div>
-            <button type="button" class="restaurant__favorite" aria-label="Ajouter aux favoris">
-              <i class="restaurant__favorite-icon far fa-heart"></i>
-            </button>
-          </div>
-        </a>
+          </a>
+          <button type="button" class="restaurant__favorite" aria-label="Ajouter aux favoris">
+            <i class="restaurant__favorite-icon fa-regular fa-heart"></i>
+          </button>
+        </div>
 
         <!-- Restaurant Card 4 -->
-        <a href="restaurants/restaurant-4.html" class="restaurant">
-          <div class="restaurant__img-container">
-            <img
-              src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-              alt="Un plat du restaurant : Le délice des sens"
-              class="restaurant__img"
-            />
-          </div>
-          <div class="restaurant__content">
+        <div class="restaurant">
+          <a href="restaurants/restaurant-4.html" class="restaurant__link">
+            <div class="restaurant__img-container">
+              <img
+                src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                alt="Un plat du restaurant : Le délice des sens"
+                class="restaurant__img"
+              />
+            </div>
             <div class="restaurant__info">
               <h3 class="restaurant__name">Le délice des sens</h3>
               <p class="restaurant__location">Folie-Méricourt</p>
             </div>
-            <button type="button" class="restaurant__favorite" aria-label="Ajouter aux favoris">
-              <i class="restaurant__favorite-icon far fa-heart"></i>
-            </button>
-          </div>
-        </a>
+          </a>
+          <button type="button" class="restaurant__favorite" aria-label="Ajouter aux favoris">
+            <i class="restaurant__favorite-icon fa-regular fa-heart"></i>
+          </button>
+        </div>
       </div>
     </main>
 
