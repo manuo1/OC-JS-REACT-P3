@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ohmyfood - La palette du goût</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   </head>
   <body>
     <!-- Header Restaurant -->
@@ -33,9 +33,9 @@
     <main class="menu-container">
       <div class="menu-header">
         <h2 class="menu-header__restaurant-name">La palette du goût</h2>
-        <div class="menu-header__favorite">
-          <i class="menu-header__favorite-icon far fa-heart"></i>
-        </div>
+        <button type="button" class="restaurant__favorite" aria-label="Ajouter aux favoris">
+          <i class="restaurant__favorite-icon far fa-heart"></i>
+        </button>
       </div>
 
       <!-- Menu - Entrées -->
