@@ -1,0 +1,153 @@
+@use "variables";
+
+// Header Theme
+.header {
+  &__logo-container {
+    background-color: variables.$background-color-white;
+    box-shadow: 0px 2px 4px 0px #00000026;
+  }
+  &__logo {
+    font-family: variables.$font-family-heading;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  &__location {
+    background-color: variables.$background-color-medium-grey;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    color: variables.$text-grey;
+  }
+
+  &__location-icon {
+    font-size: 16px;
+  }
+
+  &__location-text {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+// Hero Section Theme
+.hero {
+  background-color: variables.$background-color-light-grey;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+
+// Call to action Button Theme
+.cta-button {
+  background: linear-gradient(193.33deg, variables.$primary-color -11.44%, variables.$secondary-color 123.93%);
+  border-radius: 25px;
+  color: variables.$text-on-dark;
+  box-shadow: 0px 4px 10px 0px #00000040;
+}
+
+// Functioning Section Theme
+.functioning {
+  background-color: variables.$background-color-white;
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+// Step Cards Theme
+.step {
+  background-color: variables.$light-grey;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px #00000026;
+
+  &__number {
+    border-radius: 50%;
+    background-color: variables.$primary-color;
+    color: variables.$text-on-dark;
+    font-size: 14.18px;
+    font-weight: 500;
+  }
+
+  &__icon {
+    color: variables.$dark-grey;
+  }
+
+  &__icon--active {
+    color: variables.$primary-color;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+
+// Restaurants Section Theme
+.restaurants {
+  background-color: variables.$background-color-light-grey;
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+  }
+}
+
+// Badge New Theme
+.restaurant__badge--new {
+  background-color: variables.$badge-bg-color;
+  color: variables.$badge-text-color;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 4px 0px #00000026;
+}
+
+// Restaurant Card Theme
+.restaurant {
+  background-color: variables.$main-white;
+  border-radius: 15px;
+
+  &__name {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__location {
+    font-size: 17px;
+    font-weight: 300;
+  }
+  &__favorite {
+    background-color: variables.$main-white;
+  }
+
+  &__favorite-icon {
+    font-size: 21px;
+    color: #101010;
+  }
+}
+
+// Footer Theme
+.footer {
+  background-color: variables.$background-color-footer;
+  color: variables.$text-on-dark;
+
+  &__logo {
+    font-family: variables.$font-family-heading;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &__links {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}

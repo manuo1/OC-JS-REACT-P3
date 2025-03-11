@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+.header__logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 63px;
+}
+.header__location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  gap: 17px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px 20px;
+}
+.hero__title {
+  margin: 0 20px;
+}
+.hero__subtitle {
+  margin-top: 15px;
+}
+.hero__button {
+  margin-top: 15px;
+}
+
+.functioning {
+  padding: 40px 20px;
+}
+.functioning__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.restaurants {
+  padding: 40px 17px;
+}
+.restaurants__title {
+  margin-left: 3px;
+}
+.restaurants__list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  padding: 25px 20px;
+  position: relative;
+}
+.step__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -12px;
+  width: 24px;
+  height: 24px;
+}
+.step__icon {
+  margin-right: 20px;
+}
+
+.restaurant__badge--new {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 7px 12px;
+}
+
+.restaurant {
+  height: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.restaurant__link {
+  display: block;
+}
+.restaurant__img-container {
+  height: 175px;
+  overflow: hidden;
+}
+.restaurant__img {
+  width: 100%;
+  height: 100%;
+}
+.restaurant__info {
+  padding: 15px;
+  padding-right: 60px;
+}
+.restaurant__name {
+  margin: 0 0 5px;
+}
+.restaurant__favorite {
+  position: absolute;
+  right: 20px;
+  bottom: 25px;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  padding: 22px 25px;
+}
+.footer__logo {
+  margin-bottom: 20px;
+}
+.footer__item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.footer__icon {
+  margin-right: 10px;
+  width: 20px;
+}
+
+.header__logo-container {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+}
+.header__logo {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: italic;
+}
+.header__location {
+  background-color: #eaeaea;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  color: #353535;
+}
+.header__location-icon {
+  font-size: 16px;
+}
+.header__location-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.hero {
+  background-color: #f6f6f6;
+}
+.hero__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.hero__subtitle {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.cta-button {
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  border-radius: 25px;
+  color: #ffffff;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+}
+
+.functioning {
+  background-color: #ffffff;
+}
+.functioning__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.step {
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+}
+.step__number {
+  border-radius: 50%;
+  background-color: #9356dc;
+  color: #ffffff;
+  font-size: 14.18px;
+  font-weight: 500;
+}
+.step__icon {
+  color: #7e7e7e;
+}
+.step__icon--active {
+  color: #9356dc;
+}
+.step__text {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+}
+.restaurants__title {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.restaurant__badge--new {
+  background-color: #99e2d0;
+  color: #008766;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+}
+
+.restaurant {
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+.restaurant__name {
+  font-size: 18px;
+  font-weight: 700;
+}
+.restaurant__location {
+  font-size: 17px;
+  font-weight: 300;
+}
+.restaurant__favorite {
+  background-color: #ffffff;
+}
+.restaurant__favorite-icon {
+  font-size: 21px;
+  color: #101010;
+}
+
+.footer {
+  background-color: #353535;
+  color: #ffffff;
+}
+.footer__logo {
+  font-family: "Shrikhand", sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 400;
+}
+.footer__links {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 500;
+}
