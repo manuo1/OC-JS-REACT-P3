@@ -36,9 +36,7 @@
       margin-top: 7px;
     }
     &__steps {
-      display: flex;
-      flex-direction: row;
-      align-items: stretch;
+      @include mixins.flex(row, flex-start, stretch);
       padding-left: 12px;
       margin-top: 30px;
       margin-bottom: 15px;
@@ -62,12 +60,10 @@
       margin-top: 0;
     }
     &__list {
+      @include mixins.flex(row, space-between, stretch);
+      flex-wrap: wrap;
       margin-top: 25px;
       margin-bottom: 0px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
       gap: 50px;
     }
   }
@@ -80,9 +76,7 @@
 
   // Footer
   .footer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    @include mixins.flex(row, flex-end, strflex-endetch);
     padding: 55px 25px 35px;
 
     &__logo {
@@ -91,7 +85,7 @@
       margin-right: 40px;
     }
     &__links {
-      display: flex;
+      @include mixins.flex(row, flex-start, stretch);
       margin: 0;
       margin-right: 90px;
       gap: 18px;

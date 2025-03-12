@@ -44,9 +44,12 @@ body {
 .header {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
 }
 .header__logo-container {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -55,6 +58,7 @@ body {
 }
 .header__location {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -65,9 +69,10 @@ body {
 .hero {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   text-align: center;
   padding: 30px;
-  align-items: center;
 }
 .hero__title {
   margin: 7px 20px 0;
@@ -77,6 +82,7 @@ body {
 }
 .hero__button {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 50px;
@@ -94,6 +100,8 @@ body {
 .functioning__steps {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
   gap: 20px;
   padding-left: 12px;
   margin-top: 30px;
@@ -102,12 +110,15 @@ body {
 
 .step {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   padding: 25px 20px;
   position: relative;
 }
 .step__number {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -127,10 +138,12 @@ body {
   margin-left: 3px;
 }
 .restaurants__list {
-  margin-top: 20px;
-  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .restaurant__badge--new {
@@ -170,6 +183,7 @@ body {
   bottom: 25px;
   background: none;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -181,9 +195,11 @@ body {
   margin-bottom: 20px;
 }
 .footer__item {
-  margin-bottom: 10px;
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
+  margin-bottom: 10px;
 }
 .footer__icon {
   margin-right: 10px;
@@ -351,6 +367,7 @@ body {
   .functioning__steps {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     align-items: stretch;
     padding-left: 12px;
     margin-top: 30px;
@@ -371,12 +388,13 @@ body {
     margin-top: 0;
   }
   .restaurants__list {
-    margin-top: 25px;
-    margin-bottom: 0px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    margin-bottom: 0px;
     gap: 50px;
   }
   .restaurant {
@@ -386,8 +404,9 @@ body {
   }
   .footer {
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: strflex-endetch;
     padding: 55px 25px 35px;
     /* :nth-child(2) = Pseudo-class to target the 2nd child element */
   }
@@ -398,6 +417,9 @@ body {
   }
   .footer__links {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
     margin: 0;
     margin-right: 90px;
     gap: 18px;
@@ -412,4 +434,20 @@ body {
     font-size: 13px;
     width: 13px;
   }
+}
+* {
+  outline: 1px solid red !important;
+  box-sizing: border-box;
+}
+
+* {
+  background-color: rgba(255, 0, 0, 0.1) !important;
+}
+
+div,
+section,
+article,
+header,
+footer {
+  outline: 2px dashed red !important;
 }
