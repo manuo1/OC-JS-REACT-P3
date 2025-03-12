@@ -1,0 +1,114 @@
+@use "mixins";
+
+@media (min-width: 768px) {
+  .header {
+    &__logo-container {
+      box-shadow: none;
+      height: 96px;
+    }
+
+    &__location {
+      box-shadow: none;
+    }
+  }
+  // Hero Section Theme
+  .hero {
+    &__title {
+      margin: 0 20px;
+      font-size: 40px;
+    }
+    &__subtitle {
+      margin-top: 30px;
+    }
+    &__button {
+      margin-bottom: 0;
+    }
+  }
+
+  // functioning
+  .functioning {
+    // All direct children of functioning
+    > * {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+    &__title {
+      margin-top: 7px;
+    }
+    &__steps {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      padding-left: 12px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      gap: 36px;
+    }
+  }
+
+  .step {
+    flex: 1;
+  }
+
+  // Restaurants
+  .restaurants {
+    padding: 30px 17px;
+    // All direct children of restaurants
+    > * {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+    &__title {
+      margin-top: 0;
+    }
+    &__list {
+      margin-top: 25px;
+      margin-bottom: 0px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 50px;
+    }
+  }
+
+  .restaurant {
+    max-width: 490px;
+    flex: 0 0 calc(50% - 25px);
+    margin-bottom: 0;
+  }
+
+  // Footer
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 55px 25px 35px;
+
+    &__logo {
+      order: 2;
+      margin: 0;
+      margin-right: 40px;
+    }
+    &__links {
+      display: flex;
+      margin: 0;
+      margin-right: 90px;
+      gap: 18px;
+    }
+
+    &__item {
+      margin: 0;
+    }
+
+    /* :nth-child(2) = Pseudo-class to target the 2nd child element */
+    &__item:nth-child(2) {
+      margin-right: 25px;
+    }
+
+    &__icon {
+      font-size: 13px;
+      width: 13px;
+    }
+  }
+}

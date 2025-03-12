@@ -1,5 +1,11 @@
 @use "variables";
 
+body {
+  font-family: variables.$font-family-base;
+  color: variables.$text-main;
+  background-color: variables.$main-white;
+}
+
 // Header Theme
 .header {
   &__logo-container {

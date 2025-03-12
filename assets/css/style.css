@@ -4,16 +4,12 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  color: #000000;
-  background-color: #ffffff;
-}
-
 h1,
 h2,
 h3,
-p {
+p,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
@@ -40,7 +36,9 @@ button {
 }
 
 body {
+  max-width: 1440px;
   width: 100%;
+  margin: 0 auto;
 }
 
 .header {
@@ -97,6 +95,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-left: 12px;
   margin-top: 30px;
   margin-bottom: 28px;
 }
@@ -189,6 +188,12 @@ body {
 .footer__icon {
   margin-right: 10px;
   width: 20px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .header__logo-container {
@@ -316,4 +321,95 @@ body {
   list-style: none;
   font-size: 16px;
   font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .header__logo-container {
+    box-shadow: none;
+    height: 96px;
+  }
+  .header__location {
+    box-shadow: none;
+  }
+  .hero__title {
+    margin: 0 20px;
+    font-size: 40px;
+  }
+  .hero__subtitle {
+    margin-top: 30px;
+  }
+  .hero__button {
+    margin-bottom: 0;
+  }
+  .functioning > * {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  .functioning__title {
+    margin-top: 7px;
+  }
+  .functioning__steps {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding-left: 12px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    gap: 36px;
+  }
+  .step {
+    flex: 1;
+  }
+  .restaurants {
+    padding: 30px 17px;
+  }
+  .restaurants > * {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  .restaurants__title {
+    margin-top: 0;
+  }
+  .restaurants__list {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .restaurant {
+    max-width: 490px;
+    flex: 0 0 calc(50% - 25px);
+    margin-bottom: 0;
+  }
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 55px 25px 35px;
+    /* :nth-child(2) = Pseudo-class to target the 2nd child element */
+  }
+  .footer__logo {
+    order: 2;
+    margin: 0;
+    margin-right: 40px;
+  }
+  .footer__links {
+    display: flex;
+    margin: 0;
+    margin-right: 90px;
+    gap: 18px;
+  }
+  .footer__item {
+    margin: 0;
+  }
+  .footer__item:nth-child(2) {
+    margin-right: 25px;
+  }
+  .footer__icon {
+    font-size: 13px;
+    width: 13px;
+  }
 }

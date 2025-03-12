@@ -1,21 +1,15 @@
-@use "variables";
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: variables.$font-family-base;
-  color: variables.$text-main;
-  background-color: variables.$main-white;
-}
-
 h1,
 h2,
 h3,
-p {
+p,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
