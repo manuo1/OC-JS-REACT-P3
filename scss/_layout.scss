@@ -11,18 +11,17 @@ body {
 
 // Header Layout
 .header {
-  @include mixins.flex(column, flex-start, stretch);
+  @include mixins.flex(column, center, stretch);
+  position: relative;
 
   &__logo-container {
     @include mixins.flex(row, center, center);
-    width: 100%;
     height: 63px;
     z-index: 1;
   }
 
   &__location {
     @include mixins.flex(row, center, center);
-    width: 100%;
     height: 50px;
     gap: 17px;
   }
@@ -142,11 +141,10 @@ body {
   }
 
   &__favorite {
+    @include mixins.flex(row, center, center);
     position: absolute;
     right: 20px;
     bottom: 25px;
-    background: none;
-    @include mixins.flex(row, center, center);
   }
 }
 
@@ -166,5 +164,126 @@ body {
   &__icon {
     margin-right: 10px;
     width: 20px;
+  }
+}
+
+// ------------------------------ retaurant-x.html ------------------------------
+
+.header__back-link {
+  position: absolute;
+  z-index: 2;
+  left: 20px;
+}
+
+// Restaurant Banner
+.restaurant-banner {
+  width: 100%;
+  height: 275px;
+  overflow: hidden;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// Menu Container
+.menu-container {
+  position: relative;
+  margin: -55px auto 0;
+  max-width: 1055px;
+  border-radius: 30px 30px 0 0;
+  padding: 30px 15px;
+  z-index: 1;
+  max-width: 1055px;
+}
+
+// Menu Header
+.menu-header {
+  @include mixins.flex(row, space-between, center);
+  margin-bottom: 30px;
+
+  &__restaurant-name {
+    font-family: "Shrikhand", cursive;
+    font-size: 24px;
+  }
+}
+
+// Menu Section
+.menu-section {
+  margin: 0 auto 30px;
+  max-width: 634px;
+
+  &__title {
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 5px;
+
+    // I'm a pretty little green line
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40px;
+      height: 3px;
+      background-color: #99e2d0;
+    }
+  }
+}
+
+// Menu Items
+.menu-items {
+  @include mixins.flex(column, flex-start, stretch);
+  gap: 15px;
+}
+
+.menu-item {
+  @include mixins.flex(row, space-between, center);
+  border-radius: 15px;
+  overflow: hidden;
+  height: 69px;
+
+  &__info {
+    @include mixins.flex(column, flex-start, stretch);
+    flex: 1;
+    padding: 15px;
+    min-width: 0;
+  }
+  &__title,
+  &__details {
+    flex: 1;
+    min-width: 0;
+    white-space: nowrap; // Empêche le retour à la ligne
+    overflow: hidden; // Cache le dépassement de texte
+    text-overflow: ellipsis; // Ajoute les "..." à la fin du texte tronqué
+  }
+  &__price-container {
+    @include mixins.flex(row, center, end);
+    height: 100%;
+    padding: 15px;
+    flex-shrink: 0;
+  }
+
+  &__checkbox-container {
+    @include mixins.flex(row, center, center);
+    width: 59px;
+    height: 100%;
+    flex-shrink: 0;
+    display: none;
+  }
+}
+
+// Order Button
+.order-container {
+  @include mixins.flex(row, center, center);
+  margin: 40px 0 20px;
+
+  &__button {
+    @include mixins.flex(row, center, center);
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0 50px;
   }
 }

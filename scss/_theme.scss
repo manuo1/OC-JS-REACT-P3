@@ -6,6 +6,23 @@ body {
   background-color: variables.$main-white;
 }
 
+.favorite-restaurant {
+  background: none;
+
+  i {
+    font-size: 21px;
+    color: #101010;
+  }
+}
+
+// Call to action Button Theme
+.cta-button {
+  background: linear-gradient(to bottom, variables.$secondary-color, variables.$primary-color);
+  border-radius: 25px;
+  color: variables.$text-on-dark;
+  box-shadow: 0px 4px 10px 0px #00000040;
+}
+
 // Header Theme
 .header {
   &__logo-container {
@@ -49,14 +66,6 @@ body {
     font-size: 18px;
     font-weight: 300;
   }
-}
-
-// Call to action Button Theme
-.cta-button {
-  background: linear-gradient(to bottom, variables.$secondary-color, variables.$primary-color);
-  border-radius: 25px;
-  color: variables.$text-on-dark;
-  box-shadow: 0px 4px 10px 0px #00000040;
 }
 
 // Functioning Section Theme
@@ -130,14 +139,6 @@ body {
     font-size: 17px;
     font-weight: 300;
   }
-  &__favorite {
-    background-color: variables.$main-white;
-  }
-
-  &__favorite-icon {
-    font-size: 21px;
-    color: #101010;
-  }
 }
 
 // Footer Theme
@@ -156,5 +157,51 @@ body {
     list-style: none;
     font-size: 16px;
     font-weight: 500;
+  }
+}
+
+// ------------------------------ retaurant-x.html ------------------------------
+
+.header__back-link {
+  font-size: 16px;
+}
+
+// Menu Container
+.menu-container {
+  background-color: variables.$background-color-light-grey;
+}
+
+.restaurant-banner {
+  font-family: variables.$font-family-heading;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 28px;
+}
+
+.menu-section__title {
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+// I'm a pretty little green line
+.menu-section__title::after {
+  background-color: variables.$tertiary-color;
+}
+
+.menu-item {
+  box-shadow: 0px 4.01px 15.04px 0px #0000001a;
+
+  &__title {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  &__details {
+    font-weight: 300;
+    font-size: 15.04px;
+  }
+  &__price {
+    font-weight: 700;
+    font-size: 15.04px;
   }
 }

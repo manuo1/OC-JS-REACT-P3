@@ -76,7 +76,7 @@
 
   // Footer
   .footer {
-    @include mixins.flex(row, flex-end, strflex-endetch);
+    @include mixins.flex(row, flex-end, flex-end);
     padding: 55px 25px 35px;
 
     &__logo {
@@ -104,5 +104,13 @@
       font-size: 13px;
       width: 13px;
     }
+  }
+
+  // ------------------------------ retaurant-x.html ------------------------------
+
+  // Menu Header
+  .menu-header {
+    @include mixins.flex(row, center, center);
+    gap: 40px;
   }
 }

@@ -13,7 +13,7 @@
   </head>
   <body>
     <!-- Header Restaurant -->
-    <header class="header header--restaurant">
+    <header class="header">
       <div class="header__back-link">
         <a href="../index.html">
           <i class="fas fa-arrow-left"></i>
@@ -37,35 +37,51 @@
     <main class="menu-container">
       <div class="menu-header">
         <h2 class="menu-header__restaurant-name">La palette du goût</h2>
-        <button type="button" class="restaurant__favorite" aria-label="Ajouter aux favoris">
+        <button type="button" class="menu-header__favorite favorite-restaurant" aria-label="Ajouter aux favoris">
           <i class="restaurant__favorite-icon far fa-heart"></i>
         </button>
       </div>
-
       <!-- Menu - Entrées -->
       <section class="menu-section">
         <h3 class="menu-section__title">ENTRÉES</h3>
         <div class="menu-items">
           <div class="menu-item">
-            <div class="menu-item__content">
+            <div class="menu-item__info">
               <h4 class="menu-item__title">Fricassée d'escargots</h4>
-              <p class="menu-item__description">Au piment d'Espelette</p>
+              <p class="menu-item__details">Au piment d'Espelette</p>
             </div>
-            <div class="menu-item__price">25€</div>
+            <div class="menu-item__price-container">
+              <div class="menu-item__price">25€</div>
+            </div>
+            <div class="menu-item__checkbox-container">
+              <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
+            </div>
           </div>
+
           <div class="menu-item">
-            <div class="menu-item__content">
+            <div class="menu-item__info">
               <h4 class="menu-item__title">Foie gras de canard mi-cuit</h4>
-              <p class="menu-item__description">Et ses copeaux de truffe noire</p>
+              <p class="menu-item__details">Et ses copeaux de truffe noire</p>
             </div>
-            <div class="menu-item__price">35€</div>
+            <div class="menu-item__price-container">
+              <div class="menu-item__price">35€</div>
+            </div>
+            <div class="menu-item__checkbox-container">
+              <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
+            </div>
           </div>
+
           <div class="menu-item">
-            <div class="menu-item__content">
+            <div class="menu-item__info">
               <h4 class="menu-item__title">Œuf au plat</h4>
-              <p class="menu-item__description">Assaisonné à la truffe sur lit de caviar</p>
+              <p class="menu-item__details">Assaisonné à la truffe sur lit de caviar</p>
             </div>
-            <div class="menu-item__price">20€</div>
+            <div class="menu-item__price-container">
+              <div class="menu-item__price">20€</div>
+            </div>
+            <div class="menu-item__checkbox-container">
+              <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
+            </div>
           </div>
         </div>
       </section>
@@ -75,25 +91,42 @@
         <h3 class="menu-section__title">PLATS</h3>
         <div class="menu-items">
           <div class="menu-item">
-            <div class="menu-item__content">
+            <div class="menu-item__info">
               <h4 class="menu-item__title">Filet de bœuf aux herbes</h4>
-              <p class="menu-item__description">Accompagné de sa ribambelle de légumes</p>
+              <p class="menu-item__details">Accompagné de sa ribambelle de légumes</p>
             </div>
-            <div class="menu-item__price">40€</div>
+            <div class="menu-item__price-container">
+              <div class="menu-item__price">40€</div>
+            </div>
+            <div class="menu-item__checkbox-container">
+              <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
+            </div>
           </div>
+
           <div class="menu-item">
-            <div class="menu-item__content">
+            <div class="menu-item__info">
               <h4 class="menu-item__title">Parmentier de queue de bœuf</h4>
-              <p class="menu-item__description">À la truffe noire sur sa purée de panais</p>
+              <p class="menu-item__details">À la truffe noire sur sa purée de panais</p>
             </div>
-            <div class="menu-item__price">35€</div>
+            <div class="menu-item__price-container">
+              <div class="menu-item__price">35€</div>
+            </div>
+            <div class="menu-item__checkbox-container">
+              <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
+            </div>
           </div>
+
           <div class="menu-item">
-            <div class="menu-item__content">
+            <div class="menu-item__info">
               <h4 class="menu-item__title">Filet de turbot</h4>
-              <p class="menu-item__description">Aux agrumes</p>
+              <p class="menu-item__details">Aux agrumes</p>
             </div>
-            <div class="menu-item__price">44€</div>
+            <div class="menu-item__price-container">
+              <div class="menu-item__price">44€</div>
+            </div>
+            <div class="menu-item__checkbox-container">
+              <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
+            </div>
           </div>
         </div>
       </section>
@@ -103,25 +136,42 @@
         <h3 class="menu-section__title">DESSERTS</h3>
         <div class="menu-items">
           <div class="menu-item">
-            <div class="menu-item__content">
+            <div class="menu-item__info">
               <h4 class="menu-item__title">Paris-Brest</h4>
-              <p class="menu-item__description">Revisité</p>
+              <p class="menu-item__details">Revisité</p>
             </div>
-            <div class="menu-item__price">18€</div>
+            <div class="menu-item__price-container">
+              <div class="menu-item__price">18€</div>
+            </div>
+            <div class="menu-item__checkbox-container">
+              <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
+            </div>
           </div>
+
           <div class="menu-item">
-            <div class="menu-item__content">
+            <div class="menu-item__info">
               <h4 class="menu-item__title">Macaron au chocolat d'exception</h4>
-              <p class="menu-item__description">Et glace à la vanille de Madagascar</p>
+              <p class="menu-item__details">Et glace à la vanille de Madagascar</p>
             </div>
-            <div class="menu-item__price">22€</div>
+            <div class="menu-item__price-container">
+              <div class="menu-item__price">22€</div>
+            </div>
+            <div class="menu-item__checkbox-container">
+              <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
+            </div>
           </div>
+
           <div class="menu-item">
-            <div class="menu-item__content">
+            <div class="menu-item__info">
               <h4 class="menu-item__title">Mousse au chocolat</h4>
-              <p class="menu-item__description">Au piment d'Espelette et à la truffe noire</p>
+              <p class="menu-item__details">Au piment d'Espelette et à la truffe noire</p>
             </div>
-            <div class="menu-item__price">23€</div>
+            <div class="menu-item__price-container">
+              <div class="menu-item__price">23€</div>
+            </div>
+            <div class="menu-item__checkbox-container">
+              <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
+            </div>
           </div>
         </div>
       </section>
@@ -148,7 +198,7 @@
           <a href="#" class="footer__link">Mentions légales</a>
         </li>
         <li class="footer__item">
-          <a href="#" class="footer__link">Contact</a>
+          <a href="mailto:exemple@email.com" class="footer__link">Contact</a>
         </li>
       </ul>
     </footer>
