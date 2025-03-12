@@ -39,6 +39,7 @@
   }
 
   &__subtitle {
+    color: variables.$text-grey;
     font-size: 18px;
     font-weight: 300;
   }
@@ -46,7 +47,7 @@
 
 // Call to action Button Theme
 .cta-button {
-  background: linear-gradient(193.33deg, variables.$primary-color -11.44%, variables.$secondary-color 123.93%);
+  background: linear-gradient(to bottom, variables.$secondary-color, variables.$primary-color);
   border-radius: 25px;
   color: variables.$text-on-dark;
   box-shadow: 0px 4px 10px 0px #00000040;
