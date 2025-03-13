@@ -1,7 +1,7 @@
 @use "variables";
 
 .cta-button {
-  transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: opacity 0.3s ease, box-shadow 0.3s ease;
   box-shadow: variables.$shadow-cta-button;
 
   &:hover {
@@ -12,7 +12,7 @@
 
 .favorite-button {
   .favorite-icon {
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease;
 
     &--empty {
       opacity: 1;
@@ -58,6 +58,9 @@
 }
 
 .loader {
+  // fadeOut 1s duration
+  // 2s delay before starting fadeOut
+  // forwards Keeps the final state of animation after execution. (Stay hidden)
   animation: fadeOut 1s ease 2s forwards;
 
   &__spinner {
@@ -86,9 +89,11 @@
 }
 
 .menu-section {
-  animation: appearFromBottom 0.9s both;
+  animation: appearFromBottom 0.9s forwards;
   opacity: 0;
 
+  // Change animation-delay for each child
+  // All children will appear one by one
   @for $i from 1 through 4 {
     &:nth-child(#{$i}) {
       animation-delay: #{$i * 0.3}s;
@@ -104,5 +109,34 @@
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+.menu-item {
+  &:hover .menu-item__checkbox-container,
+  &:focus .menu-item__checkbox-container,
+  &.active .menu-item__checkbox-container {
+    animation: slideToLeft 0.3s ease forwards;
+  }
+}
+
+.menu-item .menu-item__checkbox-container {
+  animation: slideToRight 0.3s ease;
+}
+
+@keyframes slideToLeft {
+  from {
+    margin-right: -59px;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+@keyframes slideToRight {
+  from {
+    margin-right: 0;
+  }
+  to {
+    margin-right: -59px;
   }
 }

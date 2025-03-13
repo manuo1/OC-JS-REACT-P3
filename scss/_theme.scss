@@ -39,7 +39,7 @@ body {
   opacity: 0;
 }
 
-// Call to action Button Theme
+// Call to action Button
 .cta-button {
   background: variables.$bg-color-cta-button;
   border-radius: 25px;
@@ -47,7 +47,7 @@ body {
   box-shadow: variables.$shadow-cta-button;
 }
 
-// Header Theme
+// Header
 .header {
   &__logo-container {
     background-color: variables.$background-color-white;
@@ -76,7 +76,7 @@ body {
   }
 }
 
-// Hero Section Theme
+// Hero Section
 .hero {
   background-color: variables.$background-color-light;
 
@@ -92,7 +92,7 @@ body {
   }
 }
 
-// Functioning Section Theme
+// Functioning Section
 .functioning {
   background-color: variables.$background-color-white;
   &__title {
@@ -101,7 +101,7 @@ body {
   }
 }
 
-// Step Cards Theme
+// Step Cards
 .step {
   background-color: variables.$background-color-light;
   border-radius: 20px;
@@ -129,7 +129,7 @@ body {
   }
 }
 
-// Restaurants Section Theme
+// Restaurants Section
 .restaurants {
   background-color: variables.$background-color-light;
 
@@ -139,7 +139,7 @@ body {
   }
 }
 
-// Badge New Theme
+// Badge New
 .restaurant__badge--new {
   background-color: variables.$badge-bg-color;
   color: variables.$badge-text-color;
@@ -149,7 +149,7 @@ body {
   box-shadow: 0px 2px 4px 0px variables.$shadow-color-1;
 }
 
-// Restaurant Card Theme
+// Restaurant Card
 .restaurant {
   background-color: variables.$background-color-white;
   border-radius: 15px;
@@ -165,7 +165,7 @@ body {
   }
 }
 
-// Footer Theme
+// Footer
 .footer {
   background-color: variables.$background-color-dark;
   color: variables.$text-on-dark;
@@ -195,9 +195,14 @@ body {
   background-color: variables.$background-color-light;
 }
 
-.menu-header__restaurant-name {
-  font-family: variables.$font-family-heading;
-  font-size: 24px;
+.menu-header {
+  &__restaurant-name {
+    font-family: variables.$font-family-heading;
+    font-size: 24px;
+  }
+  .favorite-button {
+    height: 21px;
+  }
 }
 
 .restaurant-banner {
@@ -232,5 +237,12 @@ body {
   &__price {
     font-weight: 700;
     font-size: 15.04px;
+  }
+  &__checkbox-container {
+    background-color: variables.$tertiary-color;
+  }
+  &__checkbox-icon {
+    color: variables.$text-on-dark;
+    font-size: 20px;
   }
 }

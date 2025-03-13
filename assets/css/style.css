@@ -200,11 +200,13 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  height: 21px;
+  right: 20px;
+  bottom: 25px;
 }
 .restaurant .favorite-button .favorite-icon--empty, .restaurant .favorite-button .favorite-icon--full {
   position: absolute;
-  right: 20px;
-  bottom: 25px;
 }
 
 .footer {
@@ -312,6 +314,7 @@ body {
   flex: 1;
   padding: 15px;
   min-width: 0;
+  padding-right: 0;
 }
 .menu-item__title, .menu-item__details {
   flex: 1;
@@ -327,6 +330,7 @@ body {
   align-items: flex-end;
   height: 100%;
   padding: 15px;
+  padding-left: 5px;
   flex-shrink: 0;
 }
 .menu-item__checkbox-container {
@@ -336,8 +340,7 @@ body {
   align-items: center;
   width: 59px;
   height: 100%;
-  flex-shrink: 0;
-  display: none;
+  margin-right: -59px;
 }
 
 .order-container {
@@ -528,6 +531,9 @@ body {
   font-family: "Shrikhand", sans-serif;
   font-size: 24px;
 }
+.menu-header .favorite-button {
+  height: 21px;
+}
 
 .restaurant-banner {
   font-family: "Shrikhand", sans-serif;
@@ -560,6 +566,13 @@ body {
 .menu-item__price {
   font-weight: 700;
   font-size: 15.04px;
+}
+.menu-item__checkbox-container {
+  background-color: #99e2d0;
+}
+.menu-item__checkbox-icon {
+  color: #ffffff;
+  font-size: 20px;
 }
 
 @media (min-width: 768px) {
@@ -666,7 +679,7 @@ body {
   }
 }
 .cta-button {
-  transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: opacity 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
 }
 .cta-button:hover {
@@ -675,7 +688,7 @@ body {
 }
 
 .favorite-button .favorite-icon {
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease;
 }
 .favorite-button .favorite-icon--empty {
   opacity: 1;
@@ -734,7 +747,7 @@ body {
   }
 }
 .menu-section {
-  animation: appearFromBottom 0.9s both;
+  animation: appearFromBottom 0.9s forwards;
   opacity: 0;
 }
 .menu-section:nth-child(1) {
@@ -758,5 +771,29 @@ body {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+.menu-item:hover .menu-item__checkbox-container, .menu-item:focus .menu-item__checkbox-container, .menu-item.active .menu-item__checkbox-container {
+  animation: slideToLeft 0.3s ease forwards;
+}
+
+.menu-item .menu-item__checkbox-container {
+  animation: slideToRight 0.3s ease;
+}
+
+@keyframes slideToLeft {
+  from {
+    margin-right: -59px;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+@keyframes slideToRight {
+  from {
+    margin-right: 0;
+  }
+  to {
+    margin-right: -59px;
   }
 }
