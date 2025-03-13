@@ -56,3 +56,31 @@
     transform: scale(1);
   }
 }
+
+.loader {
+  animation: fadeOut 1s ease 2s forwards;
+
+  &__spinner {
+    animation: spin 2s linear infinite;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

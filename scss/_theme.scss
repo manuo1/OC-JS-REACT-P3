@@ -1,5 +1,17 @@
 @use "variables";
 
+.loader {
+  background-color: variables.$background-color-white;
+  opacity: 0.9;
+
+  &__spinner {
+    border-color: variables.$primary-color;
+    border-top-color: variables.$secondary_color;
+    border-bottom-color: variables.$secondary_color;
+    border-style: dashed;
+  }
+}
+
 body {
   font-family: variables.$font-family-base;
   color: variables.$text-main;

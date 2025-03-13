@@ -2,14 +2,32 @@
 
 // ------------------------------ index.html ------------------------------
 
-// body layout
+// Loader
+.loader {
+  @include mixins.flex(row, center, center);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+
+  &__spinner {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 30px;
+  }
+}
+
+// body
 body {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
 }
 
-// Header Layout
+// Header
 .header {
   @include mixins.flex(column, center, stretch);
   position: relative;
@@ -27,7 +45,7 @@ body {
   }
 }
 
-// Hero Section Layout
+// Hero Section
 .hero {
   @include mixins.flex(column, flex-start, center);
   text-align: center;
@@ -50,7 +68,7 @@ body {
   }
 }
 
-// Functioning Section Layout
+// Functioning Section
 .functioning {
   padding: 40px 20px;
 
@@ -67,7 +85,7 @@ body {
   }
 }
 
-// Step Cards Layout
+// Step Cards
 .step {
   @include mixins.flex(row, flex-start, center);
   padding: 25px 20px;
@@ -86,7 +104,7 @@ body {
   }
 }
 
-// Restaurants Section Layout
+// Restaurants Section
 .restaurants {
   padding: 40px 17px;
 
@@ -102,7 +120,7 @@ body {
   }
 }
 
-// Badge New Layout
+// Badge New
 .restaurant__badge--new {
   position: absolute;
   top: 15px;
@@ -110,7 +128,7 @@ body {
   padding: 7px 12px;
 }
 
-// Restaurant Card Layout
+// Restaurant Card
 .restaurant {
   height: 100%;
   margin-bottom: 15px;
@@ -153,7 +171,7 @@ body {
   }
 }
 
-// Footer Layout
+// Footer
 .footer {
   padding: 22px 25px;
 
@@ -180,7 +198,7 @@ body {
   left: 20px;
 }
 
-// Restaurant Banner Layout
+// Restaurant Banner
 .restaurant-banner {
   width: 100%;
   height: 275px;
@@ -192,7 +210,7 @@ body {
   }
 }
 
-// Menu Container Layout
+// Menu Container
 .menu-container {
   position: relative;
   margin: -55px auto 0;
@@ -203,7 +221,7 @@ body {
   max-width: 1055px;
 }
 
-// Menu Header Layout
+// Menu Header
 .menu-header {
   @include mixins.flex(row, space-between, center);
   margin-bottom: 30px;
@@ -225,7 +243,7 @@ body {
   }
 }
 
-// Menu Section Layout
+// Menu Section
 .menu-section {
   margin: 0 auto 30px;
   max-width: 634px;
@@ -247,7 +265,7 @@ body {
   }
 }
 
-// Menu Items Layout
+// Menu Items
 .menu-items {
   @include mixins.flex(column, flex-start, stretch);
   gap: 15px;
@@ -289,7 +307,7 @@ body {
   }
 }
 
-// Order Button Layout
+// Order Button
 .order-container {
   @include mixins.flex(row, center, center);
   margin: 40px 0 20px;
