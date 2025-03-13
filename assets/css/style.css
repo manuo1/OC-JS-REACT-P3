@@ -250,7 +250,6 @@ body {
   border-radius: 30px 30px 0 0;
   padding: 30px 15px;
   z-index: 1;
-  max-width: 1055px;
 }
 
 .menu-header {
@@ -348,7 +347,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 40px 0 20px;
+  margin: 0 0 10px;
 }
 .order-container__button {
   display: flex;
@@ -356,8 +355,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 50px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 10px;
   padding: 0 50px;
 }
 
@@ -414,7 +412,6 @@ body {
   font-family: "Shrikhand", sans-serif;
   font-size: 30px;
   font-weight: 400;
-  font-style: italic;
 }
 .header__location {
   background-color: #eaeaea;
@@ -509,7 +506,6 @@ body {
 }
 .footer__logo {
   font-family: "Shrikhand", sans-serif;
-  font-style: italic;
   font-size: 18px;
   font-weight: 400;
 }
@@ -556,7 +552,7 @@ body {
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
 }
 .menu-item__title {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 18px;
 }
 .menu-item__details {
@@ -575,7 +571,7 @@ body {
   font-size: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 634px) {
   .header__logo-container {
     box-shadow: none;
     height: 96px;

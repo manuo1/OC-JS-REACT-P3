@@ -57,7 +57,6 @@ body {
     font-family: variables.$font-family-heading;
     font-size: 30px;
     font-weight: 400;
-    font-style: italic;
   }
 
   &__location {
@@ -172,7 +171,6 @@ body {
 
   &__logo {
     font-family: variables.$font-family-heading;
-    font-style: italic;
     font-size: 18px;
     font-weight: 400;
   }
@@ -227,7 +225,7 @@ body {
   box-shadow: 0px 4.01px 15.04px 0px variables.$shadow-color-3;
 
   &__title {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 18px;
   }
   &__details {
