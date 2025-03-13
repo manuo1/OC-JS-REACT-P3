@@ -258,10 +258,6 @@ body {
   align-items: center;
   margin-bottom: 30px;
 }
-.menu-header__restaurant-name {
-  font-family: "Shrikhand", cursive;
-  font-size: 24px;
-}
 .menu-header .favorite-button {
   display: flex;
   flex-direction: row;
@@ -528,6 +524,11 @@ body {
   background-color: #f6f6f6;
 }
 
+.menu-header__restaurant-name {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 24px;
+}
+
 .restaurant-banner {
   font-family: "Shrikhand", sans-serif;
   font-weight: 400;
@@ -730,5 +731,32 @@ body {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+.menu-section {
+  animation: appearFromBottom 0.9s both;
+  opacity: 0;
+}
+.menu-section:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.menu-section:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.menu-section:nth-child(3) {
+  animation-delay: 0.9s;
+}
+.menu-section:nth-child(4) {
+  animation-delay: 1.2s;
+}
+
+@keyframes appearFromBottom {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }

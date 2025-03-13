@@ -226,11 +226,6 @@ body {
   @include mixins.flex(row, space-between, center);
   margin-bottom: 30px;
 
-  &__restaurant-name {
-    font-family: "Shrikhand", cursive;
-    font-size: 24px;
-  }
-
   .favorite-button {
     @include mixins.flex(row, center, center);
     position: relative;

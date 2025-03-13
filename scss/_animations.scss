@@ -84,3 +84,25 @@
     transform: rotate(360deg);
   }
 }
+
+.menu-section {
+  animation: appearFromBottom 0.9s both;
+  opacity: 0;
+
+  @for $i from 1 through 4 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.3}s;
+    }
+  }
+}
+
+@keyframes appearFromBottom {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
