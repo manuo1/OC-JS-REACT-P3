@@ -1,0 +1,58 @@
+@use "variables";
+
+.cta-button {
+  transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: variables.$shadow-cta-button;
+
+  &:hover {
+    opacity: 0.85;
+    box-shadow: variables.$shadow-cta-button--hover;
+  }
+}
+
+.favorite-button {
+  .favorite-icon {
+    transition: opacity 0.3s ease-in-out;
+
+    &--empty {
+      opacity: 1;
+    }
+
+    &--full {
+      opacity: 0;
+    }
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    .favorite-icon {
+      &--empty {
+        opacity: 0;
+      }
+
+      &--full {
+        opacity: 1;
+        animation: bounce 0.6s ease;
+      }
+    }
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

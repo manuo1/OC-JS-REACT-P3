@@ -140,11 +140,16 @@ body {
     margin: 0 0 5px;
   }
 
-  &__favorite {
+  .favorite-button {
     @include mixins.flex(row, center, center);
-    position: absolute;
-    right: 20px;
-    bottom: 25px;
+    .favorite-icon {
+      &--empty,
+      &--full {
+        position: absolute;
+        right: 20px;
+        bottom: 25px;
+      }
+    }
   }
 }
 
@@ -175,7 +180,7 @@ body {
   left: 20px;
 }
 
-// Restaurant Banner
+// Restaurant Banner Layout
 .restaurant-banner {
   width: 100%;
   height: 275px;
@@ -187,7 +192,7 @@ body {
   }
 }
 
-// Menu Container
+// Menu Container Layout
 .menu-container {
   position: relative;
   margin: -55px auto 0;
@@ -198,7 +203,7 @@ body {
   max-width: 1055px;
 }
 
-// Menu Header
+// Menu Header Layout
 .menu-header {
   @include mixins.flex(row, space-between, center);
   margin-bottom: 30px;
@@ -207,9 +212,20 @@ body {
     font-family: "Shrikhand", cursive;
     font-size: 24px;
   }
+
+  .favorite-button {
+    @include mixins.flex(row, center, center);
+    position: relative;
+    .favorite-icon {
+      &--empty,
+      &--full {
+        position: absolute;
+      }
+    }
+  }
 }
 
-// Menu Section
+// Menu Section Layout
 .menu-section {
   margin: 0 auto 30px;
   max-width: 634px;
@@ -227,12 +243,11 @@ body {
       left: 0;
       width: 40px;
       height: 3px;
-      background-color: #99e2d0;
     }
   }
 }
 
-// Menu Items
+// Menu Items Layout
 .menu-items {
   @include mixins.flex(column, flex-start, stretch);
   gap: 15px;
@@ -254,12 +269,12 @@ body {
   &__details {
     flex: 1;
     min-width: 0;
-    white-space: nowrap; // Empêche le retour à la ligne
-    overflow: hidden; // Cache le dépassement de texte
-    text-overflow: ellipsis; // Ajoute les "..." à la fin du texte tronqué
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   &__price-container {
-    @include mixins.flex(row, center, end);
+    @include mixins.flex(row, center, flex-end);
     height: 100%;
     padding: 15px;
     flex-shrink: 0;
@@ -274,7 +289,7 @@ body {
   }
 }
 
-// Order Button
+// Order Button Layout
 .order-container {
   @include mixins.flex(row, center, center);
   margin: 40px 0 20px;

@@ -3,31 +3,43 @@
 body {
   font-family: variables.$font-family-base;
   color: variables.$text-main;
-  background-color: variables.$main-white;
+  background-color: variables.$background-color-white;
 }
 
-.favorite-restaurant {
+.favorite-button {
   background: none;
-
+  width: 21px;
   i {
     font-size: 21px;
-    color: #101010;
   }
+}
+
+.favorite-icon--empty {
+  color: variables.$favorite-icon-empty-text-color;
+  opacity: 1;
+}
+
+.favorite-icon--full {
+  background: variables.$favorite-icon-full-bg-color;
+  background-clip: text; // Apply background only to the text
+  -webkit-background-clip: text; // compatibility
+  color: transparent; // transparent text to see background color
+  opacity: 0;
 }
 
 // Call to action Button Theme
 .cta-button {
-  background: linear-gradient(to bottom, variables.$secondary-color, variables.$primary-color);
+  background: variables.$bg-color-cta-button;
   border-radius: 25px;
   color: variables.$text-on-dark;
-  box-shadow: 0px 4px 10px 0px #00000040;
+  box-shadow: variables.$shadow-cta-button;
 }
 
 // Header Theme
 .header {
   &__logo-container {
     background-color: variables.$background-color-white;
-    box-shadow: 0px 2px 4px 0px #00000026;
+    box-shadow: 0px 2px 4px 0px variables.$shadow-color-1;
   }
   &__logo {
     font-family: variables.$font-family-heading;
@@ -37,8 +49,8 @@ body {
   }
 
   &__location {
-    background-color: variables.$background-color-medium-grey;
-    box-shadow: 0px 4px 4px 0px #00000040;
+    background-color: variables.$background-color-medium;
+    box-shadow: 0px 4px 4px 0px variables.$shadow-color-2;
     color: variables.$text-grey;
   }
 
@@ -54,7 +66,7 @@ body {
 
 // Hero Section Theme
 .hero {
-  background-color: variables.$background-color-light-grey;
+  background-color: variables.$background-color-light;
 
   &__title {
     font-size: 24px;
@@ -79,9 +91,9 @@ body {
 
 // Step Cards Theme
 .step {
-  background-color: variables.$light-grey;
+  background-color: variables.$background-color-light;
   border-radius: 20px;
-  box-shadow: 0px 4px 15px 0px #00000026;
+  box-shadow: 0px 4px 15px 0px variables.$shadow-color-1;
 
   &__number {
     border-radius: 50%;
@@ -92,7 +104,7 @@ body {
   }
 
   &__icon {
-    color: variables.$dark-grey;
+    color: variables.$grey-3;
   }
 
   &__icon--active {
@@ -107,7 +119,7 @@ body {
 
 // Restaurants Section Theme
 .restaurants {
-  background-color: variables.$background-color-light-grey;
+  background-color: variables.$background-color-light;
 
   &__title {
     font-weight: 700;
@@ -122,12 +134,12 @@ body {
   font-weight: 500;
   font-size: 14px;
   border-radius: 2px;
-  box-shadow: 0px 2px 4px 0px #00000026;
+  box-shadow: 0px 2px 4px 0px variables.$shadow-color-1;
 }
 
 // Restaurant Card Theme
 .restaurant {
-  background-color: variables.$main-white;
+  background-color: variables.$background-color-white;
   border-radius: 15px;
 
   &__name {
@@ -143,7 +155,7 @@ body {
 
 // Footer Theme
 .footer {
-  background-color: variables.$background-color-footer;
+  background-color: variables.$background-color-dark;
   color: variables.$text-on-dark;
 
   &__logo {
@@ -168,7 +180,7 @@ body {
 
 // Menu Container
 .menu-container {
-  background-color: variables.$background-color-light-grey;
+  background-color: variables.$background-color-light;
 }
 
 .restaurant-banner {
@@ -190,7 +202,7 @@ body {
 }
 
 .menu-item {
-  box-shadow: 0px 4.01px 15.04px 0px #0000001a;
+  box-shadow: 0px 4.01px 15.04px 0px variables.$shadow-color-3;
 
   &__title {
     font-weight: 500;

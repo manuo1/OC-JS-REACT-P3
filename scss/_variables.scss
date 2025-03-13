@@ -7,18 +7,35 @@ $text-main: #000000;
 $text-grey: #353535;
 $text-on-dark: #ffffff;
 
-$light-grey: #f6f6f6;
-$medium-grey: #eaeaea;
-$dark-grey: #7e7e7e;
-$main-white: #ffffff;
+$grey-1: #f6f6f6;
+$grey-2: #eaeaea;
+$grey-3: #7e7e7e;
+$grey-4: #353535;
 
+//Shadow colors
+$shadow-color-1: #00000026;
+$shadow-color-2: #00000040;
+$shadow-color-3: #0000001a;
+$shadow-color-4: #00000059;
+
+//Badge new colors
 $badge-bg-color: $tertiary-color;
 $badge-text-color: #008766;
 
-$background-color-white: $main-white;
-$background-color-light-grey: $light-grey;
-$background-color-medium-grey: $medium-grey;
-$background-color-footer: #353535;
+//Background colors
+$background-color-white: #ffffff;
+$background-color-light: $grey-1;
+$background-color-medium: $grey-2;
+$background-color-dark: $grey-4;
+
+//Favorite icon colors
+$favorite-icon-empty-text-color: #101010;
+$favorite-icon-full-bg-color: linear-gradient(to bottom, $primary-color, $secondary-color);
+
+//CTA-button
+$shadow-cta-button: 0px 4px 10px 0px $shadow-color-2;
+$shadow-cta-button--hover: 0px 4px 15px 0px $shadow-color-4;
+$bg-color-cta-button: linear-gradient(to bottom, $secondary-color, $primary-color);
 
 // Polices
 $font-family-base: "Roboto", sans-serif;

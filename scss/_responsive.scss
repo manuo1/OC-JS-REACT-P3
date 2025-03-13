@@ -1,6 +1,7 @@
 @use "mixins";
+@use "variables";
 
-@media (min-width: 768px) {
+@media (min-width: variables.$breakpoint-medium) {
   .header {
     &__logo-container {
       box-shadow: none;

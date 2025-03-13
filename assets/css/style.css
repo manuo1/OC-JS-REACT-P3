@@ -176,11 +176,13 @@ body {
 .restaurant__name {
   margin: 0 0 5px;
 }
-.restaurant__favorite {
+.restaurant .favorite-button {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.restaurant .favorite-button .favorite-icon--empty, .restaurant .favorite-button .favorite-icon--full {
   position: absolute;
   right: 20px;
   bottom: 25px;
@@ -241,6 +243,16 @@ body {
   font-family: "Shrikhand", cursive;
   font-size: 24px;
 }
+.menu-header .favorite-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.menu-header .favorite-button .favorite-icon--empty, .menu-header .favorite-button .favorite-icon--full {
+  position: absolute;
+}
 
 .menu-section {
   margin: 0 auto 30px;
@@ -258,7 +270,6 @@ body {
   left: 0;
   width: 40px;
   height: 3px;
-  background-color: #99e2d0;
 }
 
 .menu-items {
@@ -298,7 +309,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
   height: 100%;
   padding: 15px;
   flex-shrink: 0;
@@ -338,12 +349,25 @@ body {
   background-color: #ffffff;
 }
 
-.favorite-restaurant {
+.favorite-button {
   background: none;
+  width: 21px;
 }
-.favorite-restaurant i {
+.favorite-button i {
   font-size: 21px;
+}
+
+.favorite-icon--empty {
   color: #101010;
+  opacity: 1;
+}
+
+.favorite-icon--full {
+  background: linear-gradient(to bottom, #9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
 }
 
 .cta-button {
@@ -608,5 +632,48 @@ body {
     justify-content: center;
     align-items: center;
     gap: 40px;
+  }
+}
+.cta-button {
+  transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+}
+.cta-button:hover {
+  opacity: 0.85;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
+}
+
+.favorite-button .favorite-icon {
+  transition: opacity 0.3s ease-in-out;
+}
+.favorite-button .favorite-icon--empty {
+  opacity: 1;
+}
+.favorite-button .favorite-icon--full {
+  opacity: 0;
+}
+.favorite-button:hover .favorite-icon--empty, .favorite-button:active .favorite-icon--empty, .favorite-button:focus .favorite-icon--empty {
+  opacity: 0;
+}
+.favorite-button:hover .favorite-icon--full, .favorite-button:active .favorite-icon--full, .favorite-button:focus .favorite-icon--full {
+  opacity: 1;
+  animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
