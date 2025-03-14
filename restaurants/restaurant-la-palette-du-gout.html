@@ -37,16 +37,18 @@
     <main class="menu-container">
       <div class="menu-header">
         <h2 class="menu-header__restaurant-name">La palette du goût</h2>
-        <button type="button" class="favorite-button" aria-label="Ajouter aux favoris">
+        <label class="favorite-button" tabindex="0">
+          <input type="checkbox" class="favorite-checkbox" aria-label="Ajouter aux favoris" />
           <i class="favorite-icon favorite-icon--empty far fa-heart"></i>
           <i class="favorite-icon favorite-icon--full fas fa-heart"></i>
-        </button>
+        </label>
       </div>
       <!-- Menu - Entrées -->
       <section class="menu-section">
         <h3 class="menu-section__title">ENTRÉES</h3>
         <div class="menu-items">
-          <div class="menu-item" tabindex="0">
+          <label class="menu-item" tabindex="0">
+            <input type="checkbox" class="dish-checkbox" />
             <div class="menu-item__info">
               <h4 class="menu-item__title">Fricassée d'escargots</h4>
               <p class="menu-item__details">Au piment d'Espelette</p>
@@ -57,9 +59,10 @@
             <div class="menu-item__checkbox-container">
               <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
             </div>
-          </div>
+          </label>
 
-          <div class="menu-item" tabindex="0">
+          <label class="menu-item" tabindex="0">
+            <input type="checkbox" class="dish-checkbox" />
             <div class="menu-item__info">
               <h4 class="menu-item__title">Foie gras de canard mi-cuit</h4>
               <p class="menu-item__details">Et ses copeaux de truffe noire</p>
@@ -70,9 +73,10 @@
             <div class="menu-item__checkbox-container">
               <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
             </div>
-          </div>
+          </label>
 
-          <div class="menu-item" tabindex="0">
+          <label class="menu-item" tabindex="0">
+            <input type="checkbox" class="dish-checkbox" />
             <div class="menu-item__info">
               <h4 class="menu-item__title">Œuf au plat</h4>
               <p class="menu-item__details">Assaisonné à la truffe sur lit de caviar</p>
@@ -83,7 +87,7 @@
             <div class="menu-item__checkbox-container">
               <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
             </div>
-          </div>
+          </label>
         </div>
       </section>
 
@@ -91,7 +95,8 @@
       <section class="menu-section">
         <h3 class="menu-section__title">PLATS</h3>
         <div class="menu-items">
-          <div class="menu-item" tabindex="0">
+          <label class="menu-item" tabindex="0">
+            <input type="checkbox" class="dish-checkbox" />
             <div class="menu-item__info">
               <h4 class="menu-item__title">Filet de bœuf aux herbes</h4>
               <p class="menu-item__details">Accompagné de sa ribambelle de légumes</p>
@@ -102,9 +107,10 @@
             <div class="menu-item__checkbox-container">
               <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
             </div>
-          </div>
+          </label>
 
-          <div class="menu-item" tabindex="0">
+          <label class="menu-item" tabindex="0">
+            <input type="checkbox" class="dish-checkbox" />
             <div class="menu-item__info">
               <h4 class="menu-item__title">Parmentier de queue de bœuf</h4>
               <p class="menu-item__details">À la truffe noire sur sa purée de panais</p>
@@ -115,9 +121,10 @@
             <div class="menu-item__checkbox-container">
               <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
             </div>
-          </div>
+          </label>
 
-          <div class="menu-item" tabindex="0">
+          <label class="menu-item" tabindex="0">
+            <input type="checkbox" class="dish-checkbox" />
             <div class="menu-item__info">
               <h4 class="menu-item__title">Filet de turbot</h4>
               <p class="menu-item__details">Aux agrumes</p>
@@ -128,7 +135,7 @@
             <div class="menu-item__checkbox-container">
               <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
             </div>
-          </div>
+          </label>
         </div>
       </section>
 
@@ -136,7 +143,8 @@
       <section class="menu-section">
         <h3 class="menu-section__title">DESSERTS</h3>
         <div class="menu-items">
-          <div class="menu-item" tabindex="0">
+          <label class="menu-item" tabindex="0">
+            <input type="checkbox" class="dish-checkbox" />
             <div class="menu-item__info">
               <h4 class="menu-item__title">Paris-Brest</h4>
               <p class="menu-item__details">Revisité</p>
@@ -147,9 +155,10 @@
             <div class="menu-item__checkbox-container">
               <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
             </div>
-          </div>
+          </label>
 
-          <div class="menu-item" tabindex="0">
+          <label class="menu-item" tabindex="0">
+            <input type="checkbox" class="dish-checkbox" />
             <div class="menu-item__info">
               <h4 class="menu-item__title">Macaron au chocolat d'exception</h4>
               <p class="menu-item__details">Et glace à la vanille de Madagascar</p>
@@ -160,9 +169,10 @@
             <div class="menu-item__checkbox-container">
               <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
             </div>
-          </div>
+          </label>
 
-          <div class="menu-item" tabindex="0">
+          <label class="menu-item" tabindex="0">
+            <input type="checkbox" class="dish-checkbox" />
             <div class="menu-item__info">
               <h4 class="menu-item__title">Mousse au chocolat</h4>
               <p class="menu-item__details">Au piment d'Espelette et à la truffe noire</p>
@@ -173,7 +183,7 @@
             <div class="menu-item__checkbox-container">
               <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
             </div>
-          </div>
+          </label>
         </div>
       </section>
 

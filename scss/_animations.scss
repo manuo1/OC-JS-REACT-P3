@@ -1,5 +1,6 @@
 @use "variables";
 
+// -------------------- Buttons --------------------
 .cta-button {
   transition: opacity 0.3s ease, box-shadow 0.3s ease;
   box-shadow: variables.$shadow-cta-button;
@@ -23,40 +24,15 @@
     }
   }
 
-  &:hover,
-  &:active,
-  &:focus {
-    .favorite-icon {
-      &--empty {
-        opacity: 0;
-      }
-
-      &--full {
-        opacity: 1;
-        animation: bounce 0.6s ease;
-      }
-    }
+  .favorite-checkbox:checked + .favorite-icon--empty {
+    opacity: 0;
+  }
+  .favorite-checkbox:checked ~ .favorite-icon--full {
+    opacity: 1;
   }
 }
 
-@keyframes bounce {
-  0% {
-    transform: scale(1);
-  }
-  25% {
-    transform: scale(1.2);
-  }
-  50% {
-    transform: scale(0.9);
-  }
-  75% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
+// -------------------- Loader --------------------
 .loader {
   // fadeOut 1s duration
   // 2s delay before starting fadeOut
@@ -88,6 +64,7 @@
   }
 }
 
+// -------------------- Dish appearance --------------------
 .menu-section {
   animation: appearFromBottom 0.9s forwards;
   opacity: 0;
@@ -112,10 +89,10 @@
   }
 }
 
+// -------------------- Dish checkbox --------------------
 .menu-item {
   &:hover .menu-item__checkbox-container,
-  &:focus .menu-item__checkbox-container,
-  &.active .menu-item__checkbox-container {
+  .dish-checkbox:checked ~ .menu-item__checkbox-container {
     animation: slideToLeft 0.3s ease forwards;
   }
 }

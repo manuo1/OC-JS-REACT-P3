@@ -37,16 +37,18 @@
     <main class="menu-container">
       <div class="menu-header">
         <h2 class="menu-header__restaurant-name">La note enchantée</h2>
-        <button type="button" class="favorite-button" aria-label="Ajouter aux favoris">
+        <label class="favorite-button" tabindex="0">
+          <input type="checkbox" class="favorite-checkbox" aria-label="Ajouter aux favoris" />
           <i class="favorite-icon favorite-icon--empty far fa-heart"></i>
           <i class="favorite-icon favorite-icon--full fas fa-heart"></i>
-        </button>
+        </label>
       </div>
       <!-- Menu - Entrées -->
       <section class="menu-section">
         <h3 class="menu-section__title">ENTRÉES</h3>
         <div class="menu-items">
-          <div class="menu-item" tabindex="0">
+          <label class="menu-item" tabindex="0">
+            <input type="checkbox" class="dish-checkbox" />
             <div class="menu-item__info">
               <h4 class="menu-item__title">Ravioles de foie gras</h4>
               <p class="menu-item__details">Accompagnées de leur crème à la truffe</p>
@@ -57,9 +59,10 @@
             <div class="menu-item__checkbox-container">
               <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
             </div>
-          </div>
+          </label>
 
-          <div class="menu-item" tabindex="0">
+          <label class="menu-item" tabindex="0">
+            <input type="checkbox" class="dish-checkbox" />
             <div class="menu-item__info">
               <h4 class="menu-item__title">Caviar osciètre</h4>
               <p class="menu-item__details">Sur blini à la farine de blé noir</p>
@@ -70,9 +73,10 @@
             <div class="menu-item__checkbox-container">
               <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
             </div>
-          </div>
+          </label>
 
-          <div class="menu-item" tabindex="0">
+          <label class="menu-item" tabindex="0">
+            <input type="checkbox" class="dish-checkbox" />
             <div class="menu-item__info">
               <h4 class="menu-item__title">Homard et espuma de potiron</h4>
               <p class="menu-item__details">Marinés aux zestes d'orange</p>
@@ -83,9 +87,10 @@
             <div class="menu-item__checkbox-container">
               <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
             </div>
-          </div>
+          </label>
 
-          <div class="menu-item" tabindex="0">
+          <label class="menu-item" tabindex="0">
+            <input type="checkbox" class="dish-checkbox" />
             <div class="menu-item__info">
               <h4 class="menu-item__title">Foie gras de canard cuit entier</h4>
               <p class="menu-item__details">Confiture de figue et pain toasté</p>
@@ -96,7 +101,7 @@
             <div class="menu-item__checkbox-container">
               <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
             </div>
-          </div>
+          </label>
         </div>
       </section>
 
@@ -104,7 +109,8 @@
       <section class="menu-section">
         <h3 class="menu-section__title">PLATS</h3>
         <div class="menu-items">
-          <div class="menu-item" tabindex="0">
+          <label class="menu-item" tabindex="0">
+            <input type="checkbox" class="dish-checkbox" />
             <div class="menu-item__info">
               <h4 class="menu-item__title">Noix de coquilles Saint-Jacques</h4>
               <p class="menu-item__details">Sur lit de purée de céleri-rave</p>
@@ -115,9 +121,10 @@
             <div class="menu-item__checkbox-container">
               <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
             </div>
-          </div>
+          </label>
 
-          <div class="menu-item" tabindex="0">
+          <label class="menu-item" tabindex="0">
+            <input type="checkbox" class="dish-checkbox" />
             <div class="menu-item__info">
               <h4 class="menu-item__title">Langoustine poêlée</h4>
               <p class="menu-item__details">Purée de patate douce</p>
@@ -128,9 +135,10 @@
             <div class="menu-item__checkbox-container">
               <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
             </div>
-          </div>
+          </label>
 
-          <div class="menu-item" tabindex="0">
+          <label class="menu-item" tabindex="0">
+            <input type="checkbox" class="dish-checkbox" />
             <div class="menu-item__info">
               <h4 class="menu-item__title">Mijoté de queue de bœuf</h4>
               <p class="menu-item__details">Et riz sauvage aux zestes de citron</p>
@@ -141,7 +149,7 @@
             <div class="menu-item__checkbox-container">
               <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
             </div>
-          </div>
+          </label>
         </div>
       </section>
 
@@ -149,7 +157,8 @@
       <section class="menu-section">
         <h3 class="menu-section__title">DESSERTS</h3>
         <div class="menu-items">
-          <div class="menu-item" tabindex="0">
+          <label class="menu-item" tabindex="0">
+            <input type="checkbox" class="dish-checkbox" />
             <div class="menu-item__info">
               <h4 class="menu-item__title">Macaron noisette et chocolat</h4>
               <p class="menu-item__details">Glace au caramel brun et sel de Guérande</p>
@@ -160,9 +169,10 @@
             <div class="menu-item__checkbox-container">
               <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
             </div>
-          </div>
+          </label>
 
-          <div class="menu-item" tabindex="0">
+          <label class="menu-item" tabindex="0">
+            <input type="checkbox" class="dish-checkbox" />
             <div class="menu-item__info">
               <h4 class="menu-item__title">Baba au rhum revisité</h4>
               <p class="menu-item__details">Avec son coulis de citron</p>
@@ -173,9 +183,10 @@
             <div class="menu-item__checkbox-container">
               <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
             </div>
-          </div>
+          </label>
 
-          <div class="menu-item" tabindex="0">
+          <label class="menu-item" tabindex="0">
+            <input type="checkbox" class="dish-checkbox" />
             <div class="menu-item__info">
               <h4 class="menu-item__title">Tarte au citron meringuée</h4>
               <p class="menu-item__details">Déstructurée</p>
@@ -186,7 +197,7 @@
             <div class="menu-item__checkbox-container">
               <div class="menu-item__checkbox"><i class="menu-item__checkbox-icon fa-solid fa-circle-check"></i></div>
             </div>
-          </div>
+          </label>
         </div>
       </section>
 

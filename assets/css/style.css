@@ -376,6 +376,11 @@ body {
   background-color: #ffffff;
 }
 
+.favorite-checkbox,
+.dish-checkbox {
+  display: none;
+}
+
 .favorite-button {
   background: none;
   width: 21px;
@@ -571,7 +576,7 @@ body {
   font-size: 20px;
 }
 
-@media (min-width: 634px) {
+@media (min-width: 768px) {
   .header__logo-container {
     box-shadow: none;
     height: 96px;
@@ -590,7 +595,7 @@ body {
     margin-bottom: 0;
   }
   .functioning > * {
-    max-width: 1080px;
+    max-width: 1200px;
     margin: 0 auto;
   }
   .functioning__title {
@@ -608,12 +613,13 @@ body {
   }
   .step {
     flex: 1;
+    max-width: 323px;
   }
   .restaurants {
     padding: 30px 17px;
   }
   .restaurants > * {
-    max-width: 1080px;
+    max-width: 1200px;
     margin: 0 auto;
   }
   .restaurants__title {
@@ -630,8 +636,7 @@ body {
     gap: 50px;
   }
   .restaurant {
-    max-width: 490px;
-    flex: 0 0 calc(50% - 25px);
+    flex: 0 0 calc(50% - 50px);
     margin-bottom: 0;
   }
   .footer {
@@ -692,31 +697,13 @@ body {
 .favorite-button .favorite-icon--full {
   opacity: 0;
 }
-.favorite-button:hover .favorite-icon--empty, .favorite-button:active .favorite-icon--empty, .favorite-button:focus .favorite-icon--empty {
+.favorite-button .favorite-checkbox:checked + .favorite-icon--empty {
   opacity: 0;
 }
-.favorite-button:hover .favorite-icon--full, .favorite-button:active .favorite-icon--full, .favorite-button:focus .favorite-icon--full {
+.favorite-button .favorite-checkbox:checked ~ .favorite-icon--full {
   opacity: 1;
-  animation: bounce 0.6s ease;
 }
 
-@keyframes bounce {
-  0% {
-    transform: scale(1);
-  }
-  25% {
-    transform: scale(1.2);
-  }
-  50% {
-    transform: scale(0.9);
-  }
-  75% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 .loader {
   animation: fadeOut 1s ease 2s forwards;
 }
@@ -769,7 +756,8 @@ body {
     opacity: 1;
   }
 }
-.menu-item:hover .menu-item__checkbox-container, .menu-item:focus .menu-item__checkbox-container, .menu-item.active .menu-item__checkbox-container {
+.menu-item:hover .menu-item__checkbox-container,
+.menu-item .dish-checkbox:checked ~ .menu-item__checkbox-container {
   animation: slideToLeft 0.3s ease forwards;
 }
 

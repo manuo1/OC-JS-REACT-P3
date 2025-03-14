@@ -18,6 +18,11 @@ body {
   background-color: variables.$background-color-white;
 }
 
+.favorite-checkbox,
+.dish-checkbox {
+  display: none;
+}
+
 .favorite-button {
   background: none;
   width: 21px;

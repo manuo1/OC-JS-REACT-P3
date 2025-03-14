@@ -30,7 +30,7 @@
   .functioning {
     // All direct children of functioning
     > * {
-      max-width: 1080px;
+      max-width: 1200px;
       margin: 0 auto;
     }
     &__title {
@@ -47,6 +47,7 @@
 
   .step {
     flex: 1;
+    max-width: 323px;
   }
 
   // Restaurants
@@ -54,7 +55,7 @@
     padding: 30px 17px;
     // All direct children of restaurants
     > * {
-      max-width: 1080px;
+      max-width: 1200px;
       margin: 0 auto;
     }
     &__title {
@@ -70,8 +71,7 @@
   }
 
   .restaurant {
-    max-width: 490px;
-    flex: 0 0 calc(50% - 25px);
+    flex: 0 0 calc(50% - 50px);
     margin-bottom: 0;
   }
 
