@@ -17,7 +17,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "//": "Ajoute des mots personnalisés au correcteur orthographique de VS Code",
-  "cSpell.words": ["activites", "hebergements", "ohmyfood"],
+  "cSpell.words": ["activites", "hebergements", "Millefeuille", "ohmyfood"],
 
   "//": "Configuration du compilateur Live Sass Compiler",
   "//": "Génère un CSS lisible et le stocke dans le dossier /css/",
