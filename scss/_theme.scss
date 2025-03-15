@@ -52,6 +52,8 @@ body {
   box-shadow: variables.$shadow-cta-button;
 }
 
+// ------------------------------ index.html ------------------------------
+
 // Header
 .header {
   &__logo-container {
@@ -60,6 +62,7 @@ body {
   }
   &__logo {
     font-family: variables.$font-family-heading;
+    font-style: variables.$font-style-heading;
     font-size: 30px;
     font-weight: 400;
   }
@@ -119,16 +122,23 @@ body {
     font-weight: 500;
   }
 
-  &__icon {
+  .fa-mobile-alt {
+    font-size: 19.9px;
     color: variables.$grey-3;
   }
 
-  &__icon--active {
+  .fa-list-ul {
+    font-size: 15.92px;
+    color: variables.$grey-3;
+  }
+
+  .fa-store {
+    font-size: 17.91px;
     color: variables.$primary-color;
   }
 
   &__text {
-    font-weight: 500;
+    font-weight: 700; // FIGMA 500 ?
     font-size: 16px;
   }
 }
@@ -187,10 +197,17 @@ body {
   }
 }
 
-// ------------------------------ retaurant-x.html ------------------------------
+// ------------------------------ restaurant-x.html ------------------------------
 
 .header__back-link {
   font-size: 16px;
+}
+
+.restaurant-banner {
+  font-family: variables.$font-family-heading;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 28px;
 }
 
 // Menu Container
@@ -201,18 +218,11 @@ body {
 .menu-header {
   &__restaurant-name {
     font-family: variables.$font-family-heading;
-    font-size: 24px;
+    font-size: 28px;
   }
   .favorite-button {
     height: 21px;
   }
-}
-
-.restaurant-banner {
-  font-family: variables.$font-family-heading;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 28px;
 }
 
 .menu-section__title {
@@ -230,7 +240,7 @@ body {
   box-shadow: 0px 4.01px 15.04px 0px variables.$shadow-color-3;
 
   &__title {
-    font-weight: 700;
+    font-weight: 700; // FIGMA 500 ?
     font-size: 18px;
   }
   &__details {

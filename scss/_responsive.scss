@@ -1,17 +1,60 @@
+@use "sass:math";
 @use "mixins";
 @use "variables";
 
 @media (min-width: variables.$breakpoint-medium) {
+  // body
+  body {
+    max-width: variables.$max-site-width;
+  }
   .header {
     &__logo-container {
       box-shadow: none;
       height: 96px;
+    }
+    &__logo {
+      font-size: 34px;
     }
 
     &__location {
       box-shadow: none;
     }
   }
+
+  // Footer
+  .footer {
+    @include mixins.flex(row, flex-end, flex-end);
+    padding: 59px 25px 31px;
+
+    &__logo {
+      order: 2;
+      margin: 0;
+      margin-right: 40px;
+    }
+    &__links {
+      @include mixins.flex(row, flex-start, stretch);
+      margin: 0;
+      margin-right: 90px;
+      gap: 18px;
+    }
+
+    &__item {
+      margin: 0;
+    }
+
+    // target the 2nd child element
+    &__item:nth-child(2) {
+      margin-right: 25px;
+    }
+
+    &__icon {
+      font-size: 13px;
+      width: 13px;
+    }
+  }
+
+  // ------------------------------ index.html ------------------------------
+
   // Hero Section Theme
   .hero {
     &__title {
@@ -29,8 +72,9 @@
   // functioning
   .functioning {
     // All direct children of functioning
+    // -> functioning__title & functioning__steps
     > * {
-      max-width: 1200px;
+      max-width: variables.$max-container-width;
       margin: 0 auto;
     }
     &__title {
@@ -47,15 +91,16 @@
 
   .step {
     flex: 1;
-    max-width: 323px;
+    max-width: 335px - math.div(24px, 2);
   }
 
   // Restaurants
   .restaurants {
     padding: 30px 17px;
     // All direct children of restaurants
+    // -> restaurants__title & restaurants__list
     > * {
-      max-width: 1200px;
+      max-width: variables.$max-container-width;
       margin: 0 auto;
     }
     &__title {
@@ -75,43 +120,36 @@
     margin-bottom: 0;
   }
 
-  // Footer
-  .footer {
-    @include mixins.flex(row, flex-end, flex-end);
-    padding: 55px 25px 35px;
+  // ------------------------------ restaurant-x.html ------------------------------
 
-    &__logo {
-      order: 2;
-      margin: 0;
-      margin-right: 40px;
-    }
-    &__links {
-      @include mixins.flex(row, flex-start, stretch);
-      margin: 0;
-      margin-right: 90px;
-      gap: 18px;
-    }
-
-    &__item {
-      margin: 0;
-    }
-
-    /* :nth-child(2) = Pseudo-class to target the 2nd child element */
-    &__item:nth-child(2) {
-      margin-right: 25px;
-    }
-
-    &__icon {
-      font-size: 13px;
-      width: 13px;
-    }
+  // Restaurant Banner
+  .restaurant-banner {
+    height: 383px;
   }
-
-  // ------------------------------ retaurant-x.html ------------------------------
-
   // Menu Header
   .menu-header {
     @include mixins.flex(row, center, center);
     gap: 40px;
+    margin-top: 20px;
+    margin-bottom: 43px;
+  }
+  // Menu Container
+  .menu-container {
+    margin-top: -41px;
+    max-width: variables.$max-content-width;
+  }
+  // Menu Section
+  .menu-section {
+    max-width: 634px;
+    margin-bottom: 40px;
+  }
+  .menu-items {
+    gap: 12px;
+  }
+
+  .order-container {
+    &__button {
+      margin-top: 0;
+    }
   }
 }

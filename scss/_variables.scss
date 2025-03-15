@@ -36,10 +36,21 @@ $favorite-icon-full-bg-color: linear-gradient(to bottom, $primary-color, $second
 $shadow-cta-button: 0px 4px 10px 0px $shadow-color-2;
 $shadow-cta-button--hover: 0px 4px 15px 0px $shadow-color-4;
 $bg-color-cta-button: linear-gradient(to bottom, $secondary-color, $primary-color);
+// FIGMA
+// $bg-color-cta-button: linear-gradient(193.33deg, $primary-color -11.44%, $secondary-color 123.93%);
 
 // Polices
 $font-family-base: "Roboto", sans-serif;
 $font-family-heading: "Shrikhand", sans-serif;
+$font-style-heading: normal;
+// FIGMA
+// $font-style-heading: italic;
 
 // Breakpoints
 $breakpoint-medium: 768px;
+
+$max-site-width: 1440px;
+$max-container-width: 1200px;
+$max-content-width: 1055px;
+
+$min-site-width: 250px;

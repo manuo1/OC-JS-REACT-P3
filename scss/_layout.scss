@@ -1,6 +1,5 @@
 @use "mixins";
-
-// ------------------------------ index.html ------------------------------
+@use "variables";
 
 // Loader
 .loader {
@@ -22,7 +21,7 @@
 
 // body
 body {
-  max-width: 1440px;
+  min-width: variables.$min-site-width;
   width: 100%;
   margin: 0 auto;
 }
@@ -44,6 +43,30 @@ body {
     gap: 17px;
   }
 }
+
+// Footer
+.footer {
+  padding: 22px 25px;
+
+  &__logo {
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    @include mixins.flex(row, flex-start, center);
+    margin-bottom: 7px;
+  }
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__icon {
+    margin-right: 10px;
+    width: 20px;
+  }
+}
+
+// ------------------------------ index.html ------------------------------
 
 // Hero Section
 .hero {
@@ -90,6 +113,7 @@ body {
   @include mixins.flex(row, flex-start, center);
   padding: 25px 20px;
   position: relative;
+  min-height: 72.38px;
 
   &__number {
     @include mixins.flex(row, center, center);
@@ -173,26 +197,7 @@ body {
   }
 }
 
-// Footer
-.footer {
-  padding: 22px 25px;
-
-  &__logo {
-    margin-bottom: 20px;
-  }
-
-  &__item {
-    @include mixins.flex(row, flex-start, center);
-    margin-bottom: 10px;
-  }
-
-  &__icon {
-    margin-right: 10px;
-    width: 20px;
-  }
-}
-
-// ------------------------------ retaurant-x.html ------------------------------
+// ------------------------------ restaurant-x.html ------------------------------
 
 .header__back-link {
   position: absolute;
@@ -203,7 +208,7 @@ body {
 // Restaurant Banner
 .restaurant-banner {
   width: 100%;
-  height: 275px;
+  height: 273px;
   overflow: hidden;
 
   &__img {
@@ -216,8 +221,7 @@ body {
 .menu-container {
   position: relative;
   margin: -55px auto 0;
-  max-width: 1055px;
-  border-radius: 30px 30px 0 0;
+  border-radius: 40px 40px 0 0;
   padding: 30px 15px;
   z-index: 1;
 }
@@ -242,7 +246,6 @@ body {
 // Menu Section
 .menu-section {
   margin: 0 auto 30px;
-  max-width: 634px;
 
   &__title {
     margin-bottom: 15px;

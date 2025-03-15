@@ -1,0 +1,7 @@
+- Linear-gradient bouton 
+- Font weight du texte des cartes fonctionnement
+- Font weight du texte des titres des plats
+- Footer logo texte en italic
+- 
+
+

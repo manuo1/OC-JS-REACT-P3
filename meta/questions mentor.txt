@@ -1,3 +1,0 @@
-police sous titre hero et titre des plat si je respect le figma les rendu sont différent et moche
-est-ce que j'utilise le hack des checkbox pour les boutons ou pas nécessaire ici 
-réaliser une veille su js ?

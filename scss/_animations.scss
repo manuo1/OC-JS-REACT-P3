@@ -73,7 +73,7 @@
   // All children will appear one by one
   @for $i from 1 through 4 {
     &:nth-child(#{$i}) {
-      animation-delay: #{$i * 0.3}s;
+      animation-delay: #{$i * 0.3 - 0.3}s;
     }
   }
 }
