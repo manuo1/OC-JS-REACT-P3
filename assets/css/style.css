@@ -49,7 +49,7 @@ button {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  border: 30px;
+  border-width: 10px;
 }
 
 body {
@@ -374,10 +374,8 @@ body {
   opacity: 0.9;
 }
 .loader__spinner {
-  border-color: #9356dc;
-  border-top-color: #ff79da;
-  border-bottom-color: #ff79da;
-  border-style: dashed;
+  border-color: #9356dc #ff79da;
+  border-style: dotted;
 }
 
 body {

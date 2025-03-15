@@ -5,10 +5,8 @@
   opacity: 0.9;
 
   &__spinner {
-    border-color: variables.$primary-color;
-    border-top-color: variables.$secondary_color;
-    border-bottom-color: variables.$secondary_color;
-    border-style: dashed;
+    border-color: variables.$primary-color variables.$secondary_color;
+    border-style: dotted;
   }
 }
 
