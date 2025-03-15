@@ -24,6 +24,7 @@ body {
 }
 
 .favorite-button {
+  cursor: pointer;
   background: none;
   width: 21px;
   i {
@@ -219,9 +220,6 @@ body {
   &__restaurant-name {
     font-family: variables.$font-family-heading;
     font-size: 28px;
-  }
-  .favorite-button {
-    height: 21px;
   }
 }
 

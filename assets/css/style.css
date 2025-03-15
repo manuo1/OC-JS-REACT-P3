@@ -382,6 +382,7 @@ body {
 }
 
 .favorite-button {
+  cursor: pointer;
   background: none;
   width: 21px;
 }
@@ -545,9 +546,6 @@ body {
 .menu-header__restaurant-name {
   font-family: "Shrikhand", sans-serif;
   font-size: 28px;
-}
-.menu-header .favorite-button {
-  height: 21px;
 }
 
 .menu-section__title {
