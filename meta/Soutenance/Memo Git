@@ -1,0 +1,9 @@
+git clone <url>
+git pull
+git add <fichier>
+git commit -m "message"
+    git commit --amend --no-edit
+git push
+    git push --force-with-lease
+git branch <nom>
+git checkout <branche>
